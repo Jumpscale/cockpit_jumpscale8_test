@@ -1,0 +1,22 @@
+g8client__main:
+  g8.url: 'be-scale-1.demo.greenitglobe.com'
+  g8.login: 'gig'
+  g8.password: 'KrOe6gE9K5nCQdmretfXnj'
+
+cockpit__pilot:
+  telegram.token: '203845328:AAHW11Zw8vcYg7nHdjOJHSskswgkLfg-Kmw'
+  cockpit.name: 'loki_is_the_good_guy'
+  dns.login: 'admin'
+  dns.password: 'barcelona007'
+  g8.account: 'foudaa'
+  g8.url: 'be-scale-1.demo.greenitglobe.com'
+  g8.login: 'gig'
+  g8.password: 'KrOe6gE9K5nCQdmretfXnj'
+  dns.domain: 'loki_is_the_good_guy'
+  oauth.client_secret: '8plUHNtpaQp8NExkRa-3MYa1SWkOr1mgEqRxGBm25DD78tHXiIlS'
+  oauth.client_id: 'JSPortal'
+  oauth.organization: 'itsyouonline'
+
+cockpit_post__main:
+  repos:
+    - 'https://github.com/Jumpscale/cockpit_jumpscale8_test/'

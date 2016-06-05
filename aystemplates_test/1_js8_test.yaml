@@ -1,0 +1,30 @@
+node.packet.net__ub1604:
+
+
+os.ssh.ubuntu__ub1604:
+  aysfs: false
+  agent: false
+  weave: false
+  node: ub1604
+  ssh.addr: '147.75.205.7'
+  ssh.port: 22
+
+docker__js8sandbox:
+  aysfs: true,
+  image: "jumpscale/ubuntu1604",
+  build: true,
+  build.url: 'https://github.com/Jumpscale/dockers',
+  build.path: 'js8/x86_64/ubuntu1604/2_ubuntu1604/',
+  os: ub1604,
+  ports: '80, 443, 18384'
+
+
+docker__js8_devel:
+  aysfs: false,
+  image: "jumpscale/ubuntu1604",
+  build: True,
+  build.url: 'https://github.com/Jumpscale/dockers',
+  build.path: 'js8/x86_64/ubuntu1604/2_ubuntu1604/',
+  os: 'ub1604',
+  ports: '80, 443, 18384'
+
