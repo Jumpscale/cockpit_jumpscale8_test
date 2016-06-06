@@ -1,0 +1,10 @@
+ssh.key
+
+cockput_client_main:
+  ssh.addr: '...'
+  ssh.port: 2022
+  ssh.key: ...
+
+# will clone local ays templates into the cockpit
+cockpit_configure__main:
+  
