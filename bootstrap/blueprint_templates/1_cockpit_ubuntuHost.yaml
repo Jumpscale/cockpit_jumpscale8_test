@@ -1,7 +1,4 @@
-g8client__main:
-  g8.url: '{g8_url}'
-  g8.login: '{g8_login}'
-  g8.password: '{g8_password}'
+sshnode....
 
 cockpit__pilot:
   telegram.token: '{telegram_token}'
