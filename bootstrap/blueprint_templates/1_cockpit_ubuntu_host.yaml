@@ -1,0 +1,41 @@
+sshkey__main:
+
+packetclient__main:
+  packet.token: '{packet-token}' # you can get it from your packet.net management portal
+
+node.packet.net__ubuntuhost:
+  sshkey: 'main'
+  packet.client: 'main'
+  packet.project.name: '{packet-project}'
+  packet.plan.type: 'Type 0'
+  packet.device.name: 'cockpit'
+  packet.device.os: 'Ubuntu 14.04 LTS'
+
+os.ssh.ubuntu__ubuntu:
+  aysfs: false
+  agent: false
+  weave: false
+  node: ubuntuhost
+  ssh.key: main
+
+node.docker__cockpit:
+  image: 'jumpscale/g8cockpit'
+  os: 'ubuntu'
+  aysfs: false
+  ports: 
+    - '80'
+    - '443'
+    - '18384'
+  sshkey: 'main'
+
+os.ssh.ubuntu__cockpit:
+  aysfs: false
+  agent: false
+  weave: false
+  node: cockpit
+  ssh.key: main
+
+cockpit__reem:
+  dns.domain: '{dns-comain}'
+  dns.sshkey: '{dns-sshkey-path}'
+  os: 'cockpit'

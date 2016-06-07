@@ -1,0 +1,15 @@
+g8client__main:
+  g8.url: '{g8-url}'
+  g8.login: '{g8-login}'
+  g8.password: '{g8-password}'
+  g8.account: '{g8-account}'
+
+cockpit.g8__pilot:
+  g8.client: 'main'
+  telegram.token: '{telegram-token}'
+  cockpit.name: '{cockpit-name}'
+  dns.sshkey: '{dns-sshkey-path}'
+  dns.domain: '{dns-domain}'
+  oauth.client_secret: '{oauth-client-secret}'
+  oauth.client_id: '{oauth-client-id}'
+  oauth.organization: 'itsyouonline'
