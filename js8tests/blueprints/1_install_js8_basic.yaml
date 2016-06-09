@@ -1,4 +1,7 @@
+node.dummy__main:
+
 os.local__cockpit:
+  node: 'main'
 
 # node.docker__js8sandbox:
 #   aysfs: true

@@ -1,3 +1,5 @@
-
+node                           = type:str parent:node auto
 ssh.addr                       = type:str default:127.0.0.1
 ssh.port                       = type:int
+
+aysfs                          = type:bool default:False
