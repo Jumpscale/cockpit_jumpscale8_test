@@ -22,10 +22,6 @@ node.docker__cockpit:
   image: 'jumpscale/g8cockpit'
   os: 'ubuntu'
   aysfs: false
-  ports: 
-    - '80'
-    - '443'
-    - '18384'
   sshkey: 'main'
 
 os.ssh.ubuntu__cockpit:
@@ -35,7 +31,10 @@ os.ssh.ubuntu__cockpit:
   node: cockpit
   ssh.key: main
 
-cockpit__reem:
+cockpit__cockpitname:
   dns.domain: '{dns-comain}'
   dns.sshkey: '{dns-sshkey-path}'
+  os: 'cockpit'
+
+cockpit_configure__post:
   os: 'cockpit'

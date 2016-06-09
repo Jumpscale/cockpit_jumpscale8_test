@@ -1,10 +1,16 @@
-ssh.key
+ssh.key__main:
+  key.path: '{sshkey-path}'
 
-cockput_client_main:
-  ssh.addr: '...'
-  ssh.port: 2022
-  ssh.key: ...
+node.physical__ubuntuhost:
 
-# will clone local ays templates into the cockpit
-cockpit_configure__main:
-  
+os.ssh.ubuntu__cockpit:
+  aysfs: false
+  agent: false
+  weave: false
+  node: ubuntuhost
+  ssh.key: main
+  ssh.addr: '{cockpit-ip}'
+  ssh.port: '{cockpit-sshport}'
+
+cockpit_configure__post:
+  os: 'cockpit'  
