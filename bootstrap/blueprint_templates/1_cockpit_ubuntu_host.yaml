@@ -32,8 +32,12 @@ os.ssh.ubuntu__cockpit:
   ssh.key: main
 
 cockpit__cockpitname:
+  telegram.token: '{telegram-token}'
   dns.domain: '{dns-comain}'
   dns.sshkey: '{dns-sshkey-path}'
+  oauth.client_secret: '{oauth-client-secret}'
+  oauth.client_id: '{oauth-client-id}'
+  oauth.organization: 'itsyouonline'
   os: 'cockpit'
 
 cockpit_configure__post:

@@ -1,0 +1,37 @@
+os.local__cockpit:
+
+# node.docker__js8sandbox:
+#   aysfs: true
+#   image: "jumpscale/ubuntu1604"
+#   build: true
+#   build.url: 'https://github.com/Jumpscale/dockers'
+#   build.path: 'js8/x86_64/ubuntu1604/2_ubuntu1604/'
+#   os: ub1604
+#   ports: '80 443 18384'
+
+
+node.docker__js8_devel:
+  aysfs: false
+  image: "jumpscale/ubuntu1604"
+  build: True
+  build.url: 'https://github.com/Jumpscale/dockers'
+  build.path: 'js8/x86_64/ubuntu1604/2_ubuntu1604/'
+  os: 'cockpit'
+  ports: '80 443 18384'
+
+os.ssh.ubuntu__docker_devel_os:
+  node: 'js8_devel'
+  aysfs: false
+
+js8__devel:
+  aysfs: false
+  os: 'docker_devel_os'
+
+portal__main:
+  os: 'docker_devel_os'
+  spaces': 
+    - '/github/jumpscale/jumpscale_portal8/apps/gridportal/base/Cockpit'
+  actors':
+    - '/github/jumpscale/jumpscale_portal8/apps/gridportal/base/system__atyourservice/'
+    - '/github/jumpscale/jumpscale_portal8/apps/gridportal/base/system__webhooks/'
+    - '/github/jumpscale/jumpscale_portal8/apps/gridportal/base/system__gridmanager/'
