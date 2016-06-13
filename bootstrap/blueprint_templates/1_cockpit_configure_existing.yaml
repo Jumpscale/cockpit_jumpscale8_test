@@ -13,4 +13,5 @@ os.ssh.ubuntu__cockpit:
   ssh.port: '{cockpit-sshport}'
 
 cockpit_configure__post:
-  os: 'cockpit'  
+  os: 'cockpit'
+  dns.domain: 'https://{dns-domain}.barcelona.aydo.com/api/'

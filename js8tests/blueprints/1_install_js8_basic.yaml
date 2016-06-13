@@ -20,7 +20,7 @@ node.docker__js8_devel:
   build.url: 'https://github.com/Jumpscale/dockers'
   build.path: 'js8/x86_64/ubuntu1604/2_ubuntu1604/'
   os: 'cockpit'
-  ports: '80 443 18384'
+  ports: '82'
 
 os.ssh.ubuntu__docker_devel_os:
   node: 'js8_devel'

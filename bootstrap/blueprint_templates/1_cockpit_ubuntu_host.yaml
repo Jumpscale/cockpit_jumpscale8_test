@@ -33,12 +33,14 @@ os.ssh.ubuntu__cockpit:
 
 cockpit__cockpitname:
   telegram.token: '{telegram-token}'
-  dns.domain: '{dns-comain}'
+  dns.domain: '{dns-domain}'
   dns.sshkey: '{dns-sshkey-path}'
   oauth.client_secret: '{oauth-client-secret}'
   oauth.client_id: '{oauth-client-id}'
   oauth.organization: 'itsyouonline'
   os: 'cockpit'
+  dind: true
 
 cockpit_configure__post:
   os: 'cockpit'
+  dns.domain: 'https://{dns-domain}.barcelona.aydo.com/api/'
