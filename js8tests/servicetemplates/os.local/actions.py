@@ -3,7 +3,7 @@ from JumpScale import j
 
 class Actions(ActionsBaseMgmt):
 
-    def init(self, service):
+    def install(self, service):
         for ip in j.sal.nettools.getIpAddresses():
             if ip not in ['127.0.0.1', 'localhost']:
                 service.hrd.set('ssh.addr', ip)
