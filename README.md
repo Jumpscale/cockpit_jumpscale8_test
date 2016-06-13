@@ -6,4 +6,4 @@ This repo contains:
 - [js8tests](/js8tests/): an AYS repo which contains a recurring testing service
 
 To get started, you first want to have a cockpit.
-More information about how to do that [here](/bootstrap/README.md)# cockpit_jumpscale8_test
+More information about how to do that [here](/bootstrap/README.md)
