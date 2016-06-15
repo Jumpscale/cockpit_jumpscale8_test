@@ -43,5 +43,5 @@ cockpit__cockpitname:
   dind: true
 
 cockpit_configure__post:
-  os: 'cockpit'
+  os: 'cockpitname'
   dns.domain: 'https://{dns-domain}.barcelona.aydo.com/api/'
