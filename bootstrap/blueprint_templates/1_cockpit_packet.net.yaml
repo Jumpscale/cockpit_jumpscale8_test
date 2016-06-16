@@ -18,17 +18,27 @@ os.ssh.ubuntu__ubuntu:
   node: ubuntuhost
   ssh.key: main
 
-node.docker__cockpit:
+app_docker__main:
+  os: 'ubuntu'
+
+node.docker__cockpit_docker:
   image: 'jumpscale/g8cockpit'
+  docker: 'main'
+  dind: true
   os: 'ubuntu'
   aysfs: false
+  tcp.enable: true
+  ports: 
+    - '80'
+    - '443'
+    - '18384'
   sshkey: 'main'
 
-os.ssh.ubuntu__cockpit:
+os.ssh.ubuntu__cockpit_docker_os:
   aysfs: false
   agent: false
   weave: false
-  node: cockpit
+  node: cockpit_docker
   ssh.key: main
 
 cockpit__cockpitname:
@@ -39,7 +49,7 @@ cockpit__cockpitname:
   oauth.client_id: '{oauth-client-id}'
   oauth.organization: 'itsyouonline'
   oauth.jwt_key: '{oauth_jwtkey}'
-  os: 'cockpit'
+  os: 'cockpit_docker_os'
   dind: true
 
 cockpit_configure__post:
