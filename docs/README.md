@@ -1,4 +1,6 @@
-Here you'll find three blueprint templates to help you deploy your cockpit through AYS and run js8 tests through that cockpit
+To get yourself bootstrapped, please check out the [blueprint_templates](/bootstrap/blueprint_templates).
+
+You'll find three blueprint templates to help you deploy your cockpit through AYS and run js8 tests through that cockpit
 - On [packet.net](https://www.packet.net/):
     - Install the python client of packet.net with `pip3 install packet-python`
     - Fill in the [1_cockpit_packet.net.yaml](/bootstrap/blueprint_templates/1_cockpit_packet.net.yaml) template.
