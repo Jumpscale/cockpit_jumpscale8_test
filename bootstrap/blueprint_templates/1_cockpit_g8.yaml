@@ -17,5 +17,5 @@ cockpit.g8__pilot:
   dind: true
 
 cockpit_configure__post:
-  os: 'pilot'
+  os: '{cockpit-name}'
   dns.domain: 'https://{dns-domain}.barcelona.aydo.com/api/'
