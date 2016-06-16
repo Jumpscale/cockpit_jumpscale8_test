@@ -33,7 +33,7 @@ class Actions(ActionsBaseMgmt):
         }
         devel = service.aysrepo.new('js8', args=args, instance='devel', parent=docker_devel_os)
 
-        mongo = service.aysrepo.new('mongo', args={'os': 'docker_devel_os'}, instance='main', parent=docker_devel_os)
+        mongo = service.aysrepo.new('mongodb', args={'os': 'docker_devel_os'}, instance='main', parent=docker_devel_os)
 
         args = {
             'os': 'docker_devel_os',
@@ -42,4 +42,4 @@ class Actions(ActionsBaseMgmt):
                        '/github/jumpscale/jumpscale_portal8/apps/gridportal/base/system__webhooks/',
                        '/github/jumpscale/jumpscale_portal8/apps/gridportal/base/system__gridmanager/'],
         }
-        mongo = service.aysrepo.new('portal', args=args, instance='main')
+        portal = service.aysrepo.new('portal', args=args, instance='main')
