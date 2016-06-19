@@ -5,7 +5,6 @@ class Actions(ActionsBaseMgmt):
 
 
     def install(self, service):
-        # import os
         e = service.executor
         ports = service.hrd.getList('ports')
         for p in ports:
