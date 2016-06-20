@@ -15,3 +15,5 @@ os.ssh.ubuntu__cockpit:
 cockpit_configure__post:
   os: 'cockpit'
   dns.domain: 'https://{dns-domain}.barcelona.aydo.com/api/'
+  oauth.client_id: '{oauth-client-id}'
+  oauth.client_secret: '{oauth-client-secret}'

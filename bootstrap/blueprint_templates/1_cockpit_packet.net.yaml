@@ -55,3 +55,5 @@ cockpit__cockpitname:
 cockpit_configure__post:
   os: 'cockpitname'
   dns.domain: 'https://{dns-domain}.barcelona.aydo.com/api/'
+  oauth.client_id: '{oauth-client-id}'
+  oauth.client_secret: '{oauth-client-secret}'
