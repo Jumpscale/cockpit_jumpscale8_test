@@ -1,0 +1,1 @@
+telegram.channel = type:str descr:'channel that the bot reports to (make sure bot is an admin on that channel)'
