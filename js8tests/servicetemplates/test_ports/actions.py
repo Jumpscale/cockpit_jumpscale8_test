@@ -17,5 +17,5 @@ class Actions(ActionsBaseMgmt):
 
     def report(self, service, message=''):
         telegram_channel = service.hrd.getStr('telegram.channel', None)
-        self.ask_telegram(channel=telegram_channel, message=message, keyboard=[], expect_response=False, timeout=900, redis=None)
+        self.ask_telegram(channel=telegram_channel, message='PORTS CHECKED:\n%s' % message, keyboard=[], expect_response=False, timeout=900, redis=None)
         return
