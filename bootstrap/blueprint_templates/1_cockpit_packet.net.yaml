@@ -52,6 +52,8 @@ cockpit__cockpitname:
   os: 'cockpit_docker_os'
   dind: true
 
+############## ONLY INCLUDE THIS PART IF YOU WANT TO ADD JS8 TESTS TO YOUR COCKPIT ##############
+
 cockpit_configure__post:
   os: 'cockpitname'
   dns.domain: 'https://{dns-domain}.barcelona.aydo.com/api/'

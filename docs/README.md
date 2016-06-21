@@ -11,17 +11,17 @@ You'll find three blueprint templates to help you deploy your cockpit through AY
         - The `dns.domain` is what you want your cockpit's domain to be.
         - `dns.sshkey` is the path to your dns sshkey. You must follow this [documentation](https://gig.gitbooks.io/ovcdoc_internal/content/InternalIT/internal_it.html) to get the dns key.
         - For `oauth.client_id`, `oauth.client_secret`, `oauth.jwt_key` parameters, please refer to [itsyou.online documentation](https://gig.gitbooks.io/itsyouonline/content)
-    - Write in the [blueprints](/bootstrap/blueprints) directory
+    - Write your filled in template in the [blueprints](/bootstrap/blueprints) directory
     - Initialize your blueprint with `ays init`
     - Install with `ays install`
 - On a [g8](http://greenitglobe.com/#gener8):
     - Fill in the [1_cockpit_g8.yaml](/bootstrap/blueprint_templates/1_cockpit_g8.yaml) template.
-    - Write in the [blueprints](/bootstrap/blueprints) directory
+    - Write your filled in template in the [blueprints](/bootstrap/blueprints) directory
     - Initialize your blueprint with `ays init`
     - Install with `ays install`
 - On an existing cockpit:
     - Fill in the [1_cockpit_configure_existing.yaml](/bootstrap/blueprint_templates/1_cockpit_configure_existing.yaml) template.
-    - Write in the [blueprints](/bootstrap/blueprints) directory
+    - Write your filled in template in the [blueprints](/bootstrap/blueprints) directory
     - Initialize your blueprint with `ays init`
     - Install with `ays install`
 
@@ -29,3 +29,6 @@ You'll find three blueprint templates to help you deploy your cockpit through AY
 
 
 You can also deploy a cockpit using the cockpit-deployer telegram bot by following this [documentation](https://gig.gitbooks.io/cockpit/content/docs/jscockpit/installation.html)
+
+
+To have the tests report back to you, make sure your telegrambot is added to the [js8_tests](https://telegram.me/js8_tests) channel as an administrator.

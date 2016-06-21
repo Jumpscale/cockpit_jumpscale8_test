@@ -16,6 +16,8 @@ cockpit.g8__pilot:
   oauth.jwt_key: '{oauth-jwtkey}'
   dind: true
 
+############## ONLY INCLUDE THIS PART IF YOU WANT TO ADD JS8 TESTS TO YOUR COCKPIT ##############
+
 cockpit_configure__post:
   os: '{cockpit-name}'
   dns.domain: 'https://{dns-domain}.barcelona.aydo.com/api/'

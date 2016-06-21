@@ -1,3 +1,5 @@
+############## USE THIS BLUEPRINT ONLY IF YOU WANT TO ADD JS8 TESTS TO YOUR COCKPIT ##############
+
 ssh.key__main:
   key.path: '{sshkey-path}'
 

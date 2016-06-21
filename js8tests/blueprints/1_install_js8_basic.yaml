@@ -1,12 +1,16 @@
 test_js8__main:
   telegram.channel: 'js8_tests'
 
-js8testsrunner__main:
+test_js8_unittests__main:
   telegram.channel: 'js8_tests'
 
-ports_checker__main:
+test_ports__main:
   telegram.channel: 'js8_tests'
   ports:
     - 82
     - 27017
+
+test_ays8__main:
+  telegram.channel: 'js8_tests'
+
   
