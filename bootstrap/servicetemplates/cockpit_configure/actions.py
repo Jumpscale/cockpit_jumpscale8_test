@@ -9,7 +9,7 @@ class Actions(ActionsBaseMgmt):
         import json
 
         # include the tests!
-        url = 'https://github.com/Jumpscale/cockpit_jumpscale8_test.git'
+        url = 'https://github.com/Jumpscale/cockpit_jumpscale8_ci.git'
         cuisine = service.executor.cuisine
         cuisine.git.pullRepo(url)
 
@@ -37,6 +37,6 @@ class Actions(ActionsBaseMgmt):
 
         domain = service.hrd.getStr('dns.domain')
         client = j.clients.cockpit.getClient(domain, jwt)
-        blueprints = client.listBlueprints('js8tests')
+        blueprints = client.listBlueprints('js8_ci')
         for blueprint in blueprints:
-            client.executeBlueprint('js8tests', blueprint['name'])
+            client.executeBlueprint('js8_ci', blueprint['name'])

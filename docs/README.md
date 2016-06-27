@@ -1,6 +1,6 @@
 To get yourself bootstrapped, please check out the [blueprint_templates](/bootstrap/blueprint_templates).
 
-You'll find three blueprint templates to help you deploy your cockpit through AYS and run js8 tests through that cockpit
+You'll find three blueprint templates to help you deploy your cockpit through AYS and run js8 tests and autobuilds through that cockpit
 - On [packet.net](https://www.packet.net/):
     - Install the python client of packet.net with `pip3 install packet-python`
     - Fill in the [1_cockpit_packet.net.yaml](/bootstrap/blueprint_templates/1_cockpit_packet.net.yaml) template.
@@ -14,17 +14,17 @@ You'll find three blueprint templates to help you deploy your cockpit through AY
                 - For everyon else leave this empty and make sure your dns.domain will resolve to the ip address of your cockpit
         - For `oauth.client_id`, `oauth.client_secret`, `oauth.jwt_key` parameters, please refer to [itsyou.online documentation](https://gig.gitbooks.io/itsyouonline/content)
     - Write your filled in template in the [blueprints](/bootstrap/blueprints) directory
-    - Initialize your blueprint with `ays blueprint;ays init`
+    - Initialize your blueprint with `ays blueprint; ays init`
     - Install with `ays install`
 - On a [g8](http://greenitglobe.com/#gener8):
     - Fill in the [1_cockpit_g8.yaml](/bootstrap/blueprint_templates/1_cockpit_g8.yaml) template.
     - Write your filled in template in the [blueprints](/bootstrap/blueprints) directory
-    - Initialize your blueprint with `ays init`
+    - Initialize your blueprint with `ays blueprint; ays init`
     - Install with `ays install`
 - On an existing cockpit:
     - Fill in the [1_cockpit_configure_existing.yaml](/bootstrap/blueprint_templates/1_cockpit_configure_existing.yaml) template.
     - Write your filled in template in the [blueprints](/bootstrap/blueprints) directory
-    - Initialize your blueprint with `ays init`
+    - Initialize your blueprint with `ays blueprint; ays init`
     - Install with `ays install`
 
 
