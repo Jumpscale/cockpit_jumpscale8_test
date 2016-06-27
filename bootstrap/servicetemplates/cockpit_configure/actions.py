@@ -37,6 +37,7 @@ class Actions(ActionsBaseMgmt):
 
         domain = service.hrd.getStr('dns.domain')
         client = j.clients.cockpit.getClient(domain, jwt)
+        client.reloadAll()
         blueprints = client.listBlueprints('js8_ci')
         for blueprint in blueprints:
             client.executeBlueprint('js8_ci', blueprint['name'])
