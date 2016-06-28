@@ -4,9 +4,14 @@ from JumpScale import j
 class Actions(ActionsBaseMgmt):
 
     def install(self, service):
-        service.executor.cuisine.pip.install('nose')
-        service.executor.cuisine.core.file_link('$codeDir/github/jumpscale/jumpscale_core8/tests', '$base/tests')
-        rc, tests = service.executor.cuisine.core.run("nosetests $base/tests", die=False)
+        cuisine = service.executor.cuisine
+        cuisine.pip.install('nose')
+        cuisine.core.file_link('$codeDir/github/jumpscale/jumpscale_core8/tests', '$base/tests')
+        cuisine.git.pullRepo("https://github.com/Jumpscale/jumpscale_core8")
+        cuisine.git.pullRepo("https://github.com/Jumpscale/ays_jumpscale8")
+        cuisine.git.pullRepo("https://github.com/Jumpscale/jscockpit")
+
+        rc, tests = cuisine.core.run("nosetests $base/tests", die=False)
         self.report(service, tests)
 
     def report(self, service, message=''):
