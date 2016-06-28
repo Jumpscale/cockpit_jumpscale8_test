@@ -7,10 +7,12 @@ class Actions(ActionsBaseMgmt):
         cuisine = service.executor.cuisine
         cuisine.pip.install('nose')
         cuisine.core.file_link('$codeDir/github/jumpscale/jumpscale_core8/tests', '$base/tests')
+
+    def run_tests(self, service):
+        cuisine = service.executor.cuisine
         cuisine.git.pullRepo("https://github.com/Jumpscale/jumpscale_core8")
         cuisine.git.pullRepo("https://github.com/Jumpscale/ays_jumpscale8")
         cuisine.git.pullRepo("https://github.com/Jumpscale/jscockpit")
-
         rc, tests = cuisine.core.run("nosetests $base/tests", die=False)
         self.report(service, tests)
 
