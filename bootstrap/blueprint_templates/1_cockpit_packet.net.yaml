@@ -51,6 +51,7 @@ cockpit__cockpitname:
   oauth.jwt_key: '{oauth_jwtkey}'
   os: 'cockpit_docker_os'
   dind: true
+  staging: true
 
 ############## ONLY INCLUDE THIS PART IF YOU WANT TO ADD JS8 TESTS TO YOUR COCKPIT ##############
 

@@ -36,7 +36,7 @@ class Actions(ActionsBaseMgmt):
         jwt = resp.text
 
         domain = service.hrd.getStr('dns.domain')
-        client = j.clients.cockpit.getClient(domain, jwt)
+        client = j.clients.cockpit.getClient(domain, jwt, verify_ssl=False)
         client.reloadAll()
         blueprints = client.listBlueprints('js8_ci')
         for blueprint in blueprints:
