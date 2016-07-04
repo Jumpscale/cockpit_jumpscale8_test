@@ -15,6 +15,7 @@ cockpit.g8__pilot:
   oauth.organization: 'itsyouonline'
   oauth.jwt_key: '{oauth-jwtkey}'
   dind: true
+  staging: true
 
 ############## ONLY INCLUDE THIS PART IF YOU WANT TO ADD JS8 TESTS TO YOUR COCKPIT ##############
 
