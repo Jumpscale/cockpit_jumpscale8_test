@@ -9,9 +9,9 @@ You'll find three blueprint templates to help you deploy your cockpit through AY
         - The `packet.project.name` is your created project name.
         - You can get the `telegram.token` by connecting to telegram and talking to `@botfather`. Type the command `/newbot` and choose a name and username for your bot. botfather will give you a token for this bot which you can then use here.
         - The `dns.domain` is what you want your cockpit's domain to be.
-            - `dns.sshkey` is the path to your dns sshkey. 
-                - For GIG employees you must follow this [documentation](https://gig.gitbooks.io/ovcdoc_internal/content/InternalIT/internal_it.html) to get the dns key.
-                - For everyon else leave this empty and make sure your dns.domain will resolve to the ip address of your cockpit
+        - `dns.sshkey` is the path to your dns sshkey. 
+            - For GIG employees you must follow this [documentation](https://gig.gitbooks.io/ovcdoc_internal/content/InternalIT/internal_it.html) to get the dns key.
+            - For everyon else leave this empty and make sure your dns.domain will resolve to the ip address of your cockpit
         - For `oauth.client_id`, `oauth.client_secret`, `oauth.jwt_key` parameters, please refer to [itsyou.online documentation](https://gig.gitbooks.io/itsyouonline/content)
     - Write your filled in template in the [blueprints](/bootstrap/blueprints) directory
     - Initialize your blueprint with `ays blueprint; ays init`
